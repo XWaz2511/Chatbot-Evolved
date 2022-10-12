@@ -1,0 +1,104 @@
+.Screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../Images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: rgba(black, 0.15);
+
+    .ChatScreenTitle {
+        h1 {
+            font-size: 3.5vw;
+            padding: 4vh;
+            color: whitesmoke;
+            border-radius: 2.5vh;
+            border: 3px solid whitesmoke;
+            backdrop-filter: blur(15px);
+        }
+    }
+
+    .InOutPutsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        
+        .InputText, .OutputText {
+            width: 45%;
+
+            textarea {
+                font-family: "Ubuntu Mono", monospace;
+                width: 100%;
+                height: 45vh;
+                padding: 3vh;
+                border-radius: 3vh;
+                border: 3px solid whitesmoke;
+                color: whitesmoke;
+                font-size: 0.75vw;
+                background-color: transparent;
+                backdrop-filter: blur(15px);
+                overflow: auto;
+            }
+        }
+    }
+
+    .SubmitButtonContainer {
+        width: 50vw;
+        height: 15vh;
+        padding: 0.25vw;
+        border-radius: 2vh;
+        cursor: pointer;
+        border: 3px solid whitesmoke;
+        backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .TemperatureSelectorContainer {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: whitesmoke;
+
+            .TemperatureSelector {
+                width: 25%;
+            }
+
+            label {
+                max-width: 34.5%;
+                text-align: center;
+                font-size: 0.7vw;
+                height: 90%;
+            }
+        }
+
+        .SubmitButton {
+            font-family: "Ubuntu Mono", monospace;
+            font-weight: bold;
+            width: 25%;
+            height: 50%;
+            font-size: 0.85vw;
+            border-radius: 1.5vh;
+            border: 3px solid whitesmoke;
+            background-color: transparent;
+            cursor: pointer;
+            color: whitesmoke;
+            transition-property: background-color, color;
+            transition-duration: 0.15s;
+        }
+
+        .SubmitButton:hover {
+            color: black;
+            background-color: whitesmoke;
+        }
+    }
+}
